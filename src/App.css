@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+/* ========Typography / Design ========= */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.color-acc-text{
+  margin: 0;
+  color: forestgreen;
+}
+
+.color-acc-click{
+  margin: 0;
+  color: #fff;
+  border: none;
+  background-color: forestgreen;
+}
+
+#text{
+  font-weight: 300;
+}
+
+#new-quote, .btn-size{
+  color: #fff;
+  border-radius: 4px;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+.fade-out {
+  animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+
+
+
+/* ========Layout========= */
+
+.marg{
+  margin-right: .5em;
+}
+
+.big{
+  font-size: 5rem;
+}
+
+
+body {
+  margin: 0;
+  background-color: forestgreen;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-container{
+  
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+
+}
+
+
+.row{
+  display: flex;
+  width: 40em;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 2.5em;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+
+#author{
+  align-self: flex-end;
+  padding: .5em 0 1em 0;
+  font-weight: 300;
+}
+
+.clickable-container{
+  display: flex;
+  justify-content: space-between;
+  /* padding: 1.25em 0 0; */
+}
+
+.a-container, .b-container {
+  display: flex;
+  /* border: solid 1px red; */
+  
+}
+.a-container {
+  width: 20%;
+  /* justify-content: space-between; */
+}
+
+.b-container {
+  width: 27%;
+  justify-content: end;
+}
+
+/* a .color-acc-click {
+  padding-right: .5em;
+} */
+
+.btn-size {
+  /* padding: 1em 1em; */
+  display: grid;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1.25em;
+  
+}
+
+#new-quote{
+  border: none;
+  padding: .75em 1em;
+}
+
+#tweet-quote:hover, #tumblr-quote:hover, #new-quote:hover,
+#tweet-quote:focus, #tumblr-quote:focus, #new-quote:focus {
+  opacity: 75%;
+  cursor: pointer;
+}
